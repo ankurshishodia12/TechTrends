@@ -1,0 +1,9 @@
+apiVersion: v1
+name: techtrends
+description: Project 1 TechTrends
+keywords: 
+- techtrends
+version: 1.0.0
+maintainers:
+- name: Ankur Shishodia
+  email: ankur201996@gmail.com
