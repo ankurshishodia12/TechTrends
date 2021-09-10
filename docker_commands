@@ -1,0 +1,30 @@
+# Build techtrends Application
+
+  docker build -t techtrends .
+
+# Run command to access application  
+
+  docker run -d -p 7111:5000 techtrends
+
+# Run command to access logs
+
+  docker logs 3bb5a24776f5
+
+Logs:  
+
+* Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:172.17.0.1 - - [10/Sep/2021 09:46:42] "GET / HTTP/1.1" 200 -
+INFO:app:2021-09-10 09:47:19.504107 , Article "KubeCon + CloudNativeCon 2021" is retrieved!
+INFO:werkzeug:172.17.0.1 - - [10/Sep/2021 09:47:19] "GET /2 HTTP/1.1" 200 -
+DEBUG:app:2021-09-10 09:47:22.215096 About Us page is retrieved!
+INFO:werkzeug:172.17.0.1 - - [10/Sep/2021 09:47:22] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [10/Sep/2021 09:47:23] "GET /create HTTP/1.1" 200 -
+INFO:app:2021-09-10 09:47:33.110213 test
+INFO:werkzeug:172.17.0.1 - - [10/Sep/2021 09:47:33] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [10/Sep/2021 09:47:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [10/Sep/2021 09:50:27] "GET / HTTP/1.1" 200 -
