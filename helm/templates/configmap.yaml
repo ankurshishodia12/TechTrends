@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  {{ .Values.configmap.data }}
+  #version: alpine
+kind: techtrends
+metadata:
+  name: techtrends
+  namespace: {{ .Values.namespace.name }} 
