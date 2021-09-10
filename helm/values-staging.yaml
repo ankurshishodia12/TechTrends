@@ -1,7 +1,16 @@
-namespace: staging
+namespace:
+  name: staging 
+ 
 service:
   port: 5111
+
+image:
+  repository: techtrends
+  tag: latest
+  pullPolicy: IfNotPresent
+
 replicaCount: 3
+
 resources:
   requests:
     cpu: 300m
@@ -9,3 +18,6 @@ resources:
   limits:
     cpu: 500m
     memory: 128Mi
+
+configmap:
+  data: "version: 1.18.0"
