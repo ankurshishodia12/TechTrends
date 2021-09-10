@@ -5,7 +5,7 @@ service:
   port: 5111
 
 image:
-  repository: techtrends
+  repository: ankurshishodia12/techtrends
   tag: latest
   pullPolicy: IfNotPresent
 
